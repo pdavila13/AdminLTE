@@ -5,5 +5,5 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AdminLTE Tinkering</title>
 
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="{{ asset('/css/all.css') }}">
 </head>

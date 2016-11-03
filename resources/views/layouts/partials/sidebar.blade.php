@@ -5,11 +5,11 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="../../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ url('/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
                 <p>Alexander Pierce</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <a href="{{ url('#') }}"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
         <!-- search form -->
@@ -27,9 +27,10 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
 
-            <li class="active"><a href="{{ url('home') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
+            <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
             <li><a href="{{ url('about') }}"><i class="fa fa-book"></i><span>Sobre mí</span></a></li>
             <li><a href="{{ url('contact') }}"><i class="fa fa-comments-o"></i> <span>Contacta</span></a></li>
+            <li><a href="{{ url('welcome') }}" target="_blank"><i class="fa fa-check"></i> <span>Welcome</span></a></li>
 
             <li class="header">ETIQUETES</li>
             <li><a href="{{ url('#') }}"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
