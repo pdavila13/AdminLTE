@@ -13,7 +13,7 @@ require('laravel-elixir-vue-2');
  |
  */
 
-elixir((mix) => {
+elixir(function(mix) {
     mix.sass('app.scss')
         .less('app-less.less')
         .less('./node_modules/admin-lte/build/less/AdminLTE.less', './public/css/adminlte-less.css')
@@ -22,5 +22,8 @@ elixir((mix) => {
             './public/css/app-less.css',
             './public/css/adminlte-less.css',
         ])
-       .webpack('app.js');
+        .copy('node_modules/font-awesome/fonts/*.*','public/fonts/')
+        .copy('node_modules/ionicons/dist/fonts/*.*','public/fonts/')
+        .copy('node_modules/admin-lte/bootstrap/fonts/*.*','public/fonts/bootstrap')
+        .webpack('app.js');
 });
