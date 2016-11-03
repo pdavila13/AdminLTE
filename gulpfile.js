@@ -20,6 +20,7 @@ elixir(function(mix) {
         .styles([
             './public/css/app.css',
             './public/css/app-less.css',
+            './node_modules/admin-lte/dist/css/skins/_all-skins.css',
             './public/css/adminlte-less.css',
         ])
         .copy('node_modules/font-awesome/fonts/*.*','public/fonts/')
